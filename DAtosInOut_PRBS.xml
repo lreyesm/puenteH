@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+      		<SubSystem>
+		<Name>Compare
+To Zero</Name>
+		<xPCName>DAtosInOut_PRBS/Compare To Zero</xPCName>
+		
+		
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Compare To Zero/Constant</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/Compare To Zero/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS/Compare To Zero</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>Compare To Zero/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS/Compare To Zero</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>RPM_carga</Name>
+		<xPCName>DAtosInOut_PRBS/RPM_carga</xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>RPM_carga1</Name>
+		<xPCName>DAtosInOut_PRBS/RPM_carga1</xPCName>
+		
+		
+
+		</SubSystem>
+		<SubSystem>
+		<Name>TRayectoria</Name>
+		<xPCName>DAtosInOut_PRBS/TRayectoria</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>FromWs</sigName>
+              <xpcsigName>TRayectoria/FromWs</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS/TRayectoria</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Validacion</Name>
+		<xPCName>DAtosInOut_PRBS/Validacion</xPCName>
+		
+		
+			  
+			  
+              <signal>
+              <sigName>FromWs</sigName>
+              <xpcsigName>Validacion/FromWs</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS/Validacion</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+		</SubSystem>
+		<SubSystem>
+		<Name>Velocidad de la carga</Name>
+		<xPCName>DAtosInOut_PRBS/Velocidad de la carga</xPCName>
+		
+		
+
+		</SubSystem>
+
+      
+            <block>
+            <blkName>Frec de base de tiempos</blkName>
+            <xpcblkName>Frec de base de tiempos</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/Frec de base de tiempos</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Frecuencia PWM</blkName>
+            <xpcblkName>Frecuencia PWM</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/Frecuencia PWM</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>RPM carga</blkName>
+            <xpcblkName>RPM carga</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/RPM carga</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>RPM carga 
+Normalizada</blkName>
+            <xpcblkName>RPM carga  Normalizada</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/RPM carga  Normalizada</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>Memory</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>PCI 6221 ENC </blkName>
+            <xpcblkName>PCI 6221 ENC </xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/PCI 6221 ENC </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>PCI 6221 PWM Generate </blkName>
+            <xpcblkName>PCI 6221 PWM Generate </xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/PCI 6221 PWM Generate </SLblockPath>
+            <isSrc>[0 2 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+            <block>
+            <blkName>PCI-6221 DO</blkName>
+            <xpcblkName>PCI-6221 DO</xpcblkName>
+            <SLblockPath>DAtosInOut_PRBS/PCI-6221 DO</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+		  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+          </parameter>
+          </block>
+			  
+			  
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Abs</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+                <sigLabel>Salida Digital</sigLabel>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>PRBS</sigName>
+              <xpcsigName>PRBS</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>RPM carga</sigName>
+              <xpcsigName>RPM carga</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>RPM carga 
+Normalizada</sigName>
+              <xpcsigName>RPM carga  Normalizada</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>RPM motor</sigName>
+              <xpcsigName>RPM motor</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>Memory</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Puntos en H</sigName>
+              <xpcsigName>Puntos en H</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Puntos por ciclo</sigName>
+              <xpcsigName>Puntos por ciclo</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>PCI 6221 ENC </sigName>
+              <xpcsigName>PCI 6221 ENC </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+			  
+			  
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+			  <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+			  <sigTestPoint>false</sigTestPoint>
+            </signal>
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+   <parameter>
+      <paramName>ts</paramName>
+          <dim>[1,1]</dim>
+		 <SubSystemName>DAtosInOut_PRBS</SubSystemName>
+   </parameter>
+</block>
+</Root>
